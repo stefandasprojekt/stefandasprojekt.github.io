@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteshoot 0.0</title>
+
+    <style>
+        body {
+            background-image: url('levels/img/background.jpg');
+        }
+        
+        * {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+        button {
+            margin-left: 200px;
+            margin-right: 200px;
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+            height: 9vh;
+            width: calc(100% - 400px);
+            margin-top: 5px;
+            text-align: center;
+            font-size: 40px;
+        }
+        
+        #_1 button {
+            background-color: #0ff;
+            margin-top: 3px;
+        }
+        
+        #_2 button {
+            background-color: #0f0;
+        }
+        
+        #_3 button {
+            background-color: #ff0;
+            color: #000;
+        }
+        
+        #_4 button {
+            background-color: #f80;
+        }
+        
+        #_5 button,
+        #_8 button {
+            background-color: #f00;
+        }
+        
+        #_6 button {
+            background-color: #808;
+        }
+        
+        #_7 button {
+            background-color: #222;
+        }
+        
+        .height {
+            margin-left: calc(50vw - 200px);
+            height: 20vh;
+        }
+    </style>
+    <script>
+        let easy = 'Leicht';
+        let medium = 'Mittel';
+        let hard = 'Schwer';
+        let harder = 'Sehr schwer';
+        let insane = 'Nach dem Tod';
+    </script>
+</head>
+
+<body>
+    <div id="_1">
+        <button type="button" id="__1" onclick="window.location.href = 'categories/easy.html'">Leicht</a>
+    </div>
+
+    <div id="_2">
+        <button type="button" id="__2" onclick="window.location.href = 'categories/normal.html'">Mittel</a>
+    </div>
+
+    <div id="_3">
+        <button type="button" id="__3" onclick="window.location.href = 'categories/hard.html'">Schwer</a>
+    </div>
+
+    <div id="_4">
+        <button type="button" id="__4" onclick="window.location.href = 'categories/harder.html'">Sehr schwer</a>
+    </div>
+
+    <div id="_5">
+        <button type="button" id="__5" onclick="window.location.href = 'categories/insane.html'">Nach dem Tod</a>
+    </div>
+    </div>
+
+    <img src="levels/img/alien.png" class="height"></img>
+
+    
+    <div id="_8">
+        <button type="button" id="__8" onclick="localStorage.clear(); window.location.href = 'index.html'">Logout</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            background-image: url('levels/img/background.jpg');
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        
+        input {
+            margin-left: calc(50% - 100px);
+            margin-top: 25vh;
+            width: 200px;
+        }
+        
+        button {
+            margin-left: calc(50% - 260px);
+            margin-top: 100px;
+            background-color: #101246;
+            padding: 30px 200px;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        
+        #auto {
+            margin-top: 50px;
+            margin-left: calc(50% - 295px);
+            background-color: #050741;
+        }
+
+        button#font {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            width: 15px;
+        }
+    </style>
+
+    <script>
+        function awelcome() {
+            document.head.innerHTML = '<meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Meteshoot</title><style>body {background-image: url("levels/img/background.jpg");} button { background-color: #222; color: white; font-size: 15px; margin-left: calc(50% - 200px); margin-top: 30vh; padding: 50px 150px; cursor: pointer; } a { position: absolute; top: 50; }</style>';
+            document.body.innerHTML = '    <a href="info/index.html"><img src="levels/img/info.png" alt=""></a><button type="button" onclick="window.location.href = ' + "'all_levels.html'" + '">Willkommen, ' + localStorage.getItem('name') + '</button>';
+        }
+    </script>
+
+    <body>
+        <button id="auto" onclick="awelcome()">Login</button>
+    </body>
+
+</html>
